@@ -1,4 +1,3 @@
-
 " pathogen fix
 filetype on
 filetype off
@@ -17,7 +16,7 @@ set showmode 				" show current mode
 set incsearch				" find next match as you're typing the search
 set hlsearch				" highlight searches
 
-set number					" show line numbers
+set number                              " show line numbers
 
 set linespace=4     " add a little line space for readability
 
@@ -38,15 +37,15 @@ set nofoldenable
 " don't continue commenting when using O/o
 set formatoptions-=o
 
-
 filetype plugin on
 filetype indent on
 
 " syntax highlighting on
 syntax on
 
-
 " hide buffers when not displayed
 set hidden
+
+" color schemery
 colorscheme desert
 set background=dark
