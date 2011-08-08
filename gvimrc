@@ -1,2 +1,2 @@
-colorscheme solarized
+colorscheme wombat
 set background=dark

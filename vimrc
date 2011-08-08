@@ -16,7 +16,7 @@ set showmode 				" show current mode
 set incsearch				" find next match as you're typing the search
 set hlsearch				" highlight searches
 
-set number                              " show line numbers
+set nonumber                            " do show line numbers
 
 set linespace=4     " add a little line space for readability
 
@@ -45,6 +45,9 @@ syntax on
 
 " hide buffers when not displayed
 set hidden
+
+" set font
+set guifont=DejaVu\ Sans\ Mono\ 10
 
 " color schemery
 colorscheme desert
