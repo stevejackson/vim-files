@@ -56,3 +56,9 @@ set guifont=DejaVu\ Sans\ Mono\ 10
 " color schemery
 colorscheme desert
 set background=dark
+
+" paste toggle mode, F2, for pasting text in insert mode
+set pastetoggle=<F2>
+
+" clear the search buffer when you press ,/
+nmap <silent> ,/ :nohlsearch<CR>
