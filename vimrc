@@ -8,6 +8,10 @@ call pathogen#helptags()
 " use vim settings, not vi settings
 set nocompatible
 
+" no backup files, no swap files
+set nobackup
+set noswapfile
+
 " :cmdline history
 set history=1000
 
