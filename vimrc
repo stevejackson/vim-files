@@ -39,7 +39,7 @@ set formatoptions-=o
 
 filetype plugin on
 filetype indent on
-
+filetype plugin indent on
 " syntax highlighting on
 syntax on
 
