@@ -16,7 +16,7 @@ set showmode 				" show current mode
 set incsearch				" find next match as you're typing the search
 set hlsearch				" highlight searches
 
-set nonumber                            " do show line numbers
+set number                              " do show line numbers
 
 set linespace=4     " add a little line space for readability
 
