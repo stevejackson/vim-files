@@ -62,3 +62,5 @@ set pastetoggle=<F2>
 
 " clear the search buffer when you press ,/
 nmap <silent> ,/ :nohlsearch<CR>
+
+let mapleader = ","
