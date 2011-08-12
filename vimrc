@@ -28,6 +28,7 @@ set linespace=4     " add a little line space for readability
 set guioptions-=T
 
 " indention settings
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
