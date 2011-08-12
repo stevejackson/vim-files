@@ -15,10 +15,10 @@ set noswapfile
 " :cmdline history
 set history=1000
 
-set showmode 				" show current mode
+set showmode        " show current mode
 
-set incsearch				" find next match as you're typing the search
-set hlsearch				" highlight searches
+set incsearch       " find next match as you're typing the search
+set hlsearch        " highlight searches
 
 set number                              " do show line numbers
 
@@ -39,14 +39,14 @@ set foldmethod=indent
 set foldnestmax=3
 set nofoldenable
 
-" don't continue commenting when using O/o
-set formatoptions-=o
-
 filetype plugin on
 filetype indent on
 filetype plugin indent on
 " syntax highlighting on
 syntax on
+
+" don't continue commenting when using O/o
+set formatoptions-=o
 
 " hide buffers when not displayed
 set hidden
@@ -65,3 +65,20 @@ set pastetoggle=<F2>
 nmap <silent> ,/ :nohlsearch<CR>
 
 let mapleader = ","
+
+" toggle see invisibles
+nmap <leader>l :set list!<CR>
+
+" strip trailng whitespaces function
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+function! <SID>StripTrailingWhitespaces()
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Execute it
+  %s/\s\+$//e
+  " Clean up: restore search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
