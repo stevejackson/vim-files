@@ -4,27 +4,24 @@ These are my personal vim settings. Contains .vimrc, .gvimrc, and plugin submodu
 
 h1. Usage
 
-@
-cd ~
+<pre><code>cd ~
 git clone http://github.com/stevejackson/vim-files.git ~/.vim
 ~/.vim/configure
-@
+</code></pre>
 
 If you want to update the various git plugins:
 
-@
-cd ~/.vim
+<pre><code>cd ~/.vim
 git submodule foreach git pull origin master
-@
+</code></pre>
 
 To add a new submodule/plugin:
 
-@
-cd ~/.vim
+<pre><code>cd ~/.vim
 git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
 git add .
 git commit -m "installed fugitive.vim"
-@
+</code></pre>
 
 h1. Thanks
 
