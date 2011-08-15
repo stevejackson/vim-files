@@ -64,6 +64,9 @@ set pastetoggle=<F2>
 " clear the search buffer when you press ,/
 nmap <silent> ,/ :nohlsearch<CR>
 
+" give a few lines of room when scrolling based off cursor position
+set scrolloff=3
+
 let mapleader = ","
 
 " toggle see invisibles
