@@ -1,0 +1,17 @@
+#! /bin/sh
+
+cd ~
+
+# delete existing vimrc files
+rm ~/.vimrc
+rm ~/.gvimrc
+
+# set up symlinks
+ln ~/.vim/vimrc ~/.vimrc
+ln ~/.vim/gvimrc ~/.gvimrc
+
+# initialize & update plugins
+cd ~/.vim
+git submodule init
+git submodule update
+git submodule foreach git pull origin master
