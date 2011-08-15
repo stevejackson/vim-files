@@ -4,7 +4,7 @@ These are my personal vim settings. Contains .vimrc, .gvimrc, and plugin submodu
 
 h1. Usage
 
-<pre><code>cd ~
+<pre><code>
 git clone http://github.com/stevejackson/vim-files.git ~/.vim
 ~/.vim/configure
 </code></pre>

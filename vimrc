@@ -72,7 +72,7 @@ let mapleader = ","
 " toggle see invisibles
 nmap <leader>l :set list!<CR>
 
-" strip trailng whitespaces function
+" strip trailing whitespaces function
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.
@@ -83,5 +83,20 @@ function! <SID>StripTrailingWhitespaces()
   %s/\s\+$//e
   " Clean up: restore search history, and cursor position
   let @/=_s
+  call cursor(l, c)
+endfunction
+
+" re-indent file function
+nnoremap <silent> <F4> :call <SID>ReindentFile()<CR>
+function! <SID>ReindentFile()
+  " Save cursor position
+  let l = line(".")
+  let c = col(".")
+
+  " Reindent File
+  let cmd = "normal!" . "gg=G"
+  execute cmd
+
+  " Move cursor back to saved position
   call cursor(l, c)
 endfunction
