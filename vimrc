@@ -70,7 +70,7 @@ set scrolloff=3
 let mapleader = ","
 
 " toggle see invisibles
-nmap <leader>l :set list!<CR>
+nmap <leader>si :set list!<CR>
 
 " strip trailing whitespaces function
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
