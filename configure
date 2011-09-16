@@ -9,6 +9,7 @@ rm ~/.gvimrc
 # set up symlinks
 ln ~/.vim/vimrc ~/.vimrc
 ln ~/.vim/gvimrc ~/.gvimrc
+ln ~/.vim/tmux.conf ~/.tmux.conf
 
 # initialize & update plugins
 cd ~/.vim
