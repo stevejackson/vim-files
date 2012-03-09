@@ -115,24 +115,22 @@ endfunction
 
 " abbreviations for inserting lorem ipsum
 iab lipsum1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta ultrices urna et blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros ac est luctus auctor. Donec vel ligula eget turpis varius imperdiet. Fusce euismod eros ut purus bibendum id tempus nisi sagittis. Nullam rutrum sapien id mauris tincidunt pulvinar. Integer vitae velit ipsum. Quisque risus velit, consequat non auctor ut, congue in risus. Sed mi nisl, porttitor adipiscing elementum vel, blandit dapibus sapien. Sed nec leo dolor. 
-iab lipsum2 Duis non turpis nisi. Praesent sodales tortor a est vulputate feugiat. Nam egestas tellus ac erat sollicitudin id aliquet nunc scelerisque. Etiam interdum nisi ut dolor consequat ac consequat nisl viverra. Nullam nisl lectus, fringilla nec tristique vel, semper vitae turpis. Integer sollicitudin feugiat tincidunt. Curabitur et pretium ligula. In interdum ornare nisl nec fringilla. Aenean eget elit nunc. Sed pharetra cursus posuere. Nunc ultrices euismod nibh, vel sagittis lacus lobortis nec. Curabitur elit leo, posuere in faucibus at, euismod ac felis. In hac habitasse platea dictumst. Vestibulum consectetur iaculis vestibulum. Aliquam vestibulum mattis nunc eu hendrerit. 
 
-" Command-T mappings
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT spec<cr>
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
+" CtrlP mappings
+map <leader>f :CtrlP<cr>
+map <leader>gs :CtrlP spec<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gl :CtrlP lib<cr>
+map <leader>ga :CtrlP assets<cr>
 
 " switch between last two files
 nnoremap <leader><leader> <c-^>
 
 
 " autocommand filetype stuff from tpope
-
 
 if has("autocmd")
   if $HOME !~# '^/Users/'
