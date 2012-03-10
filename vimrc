@@ -129,7 +129,6 @@ map <leader>ga :CtrlP assets<cr>
 " switch between last two files
 nnoremap <leader><leader> <c-^>
 
-
 " autocommand filetype stuff from tpope
 
 if has("autocmd")
