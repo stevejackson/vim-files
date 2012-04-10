@@ -116,6 +116,13 @@ endfunction
 " abbreviations for inserting lorem ipsum
 iab lipsum1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta ultrices urna et blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros ac est luctus auctor. Donec vel ligula eget turpis varius imperdiet. Fusce euismod eros ut purus bibendum id tempus nisi sagittis. Nullam rutrum sapien id mauris tincidunt pulvinar. Integer vitae velit ipsum. Quisque risus velit, consequat non auctor ut, congue in risus. Sed mi nisl, porttitor adipiscing elementum vel, blandit dapibus sapien. Sed nec leo dolor. 
 
+" ruby puts debugging
+iab pts1 5.times { puts '1' }
+iab pts2 5.times { puts '2' }
+iab pts3 5.times { puts '3' }
+iab pts4 5.times { puts '4' }
+iab pts5 5.times { puts '5' }
+
 " CtrlP mappings
 map <leader>f :CtrlP<cr>
 map <leader>gs :CtrlP spec<cr>
